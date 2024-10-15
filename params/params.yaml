@@ -1,0 +1,11 @@
+/**:
+    ros__parameters:
+        namespace: ""
+        nodeName: "rv2_package_example"
+        id: "1"
+        use_sim_time: false
+
+        topicName: "rv2_package"
+        topicNameSuffixList: ["", "_0", "_1", "_2", "_3"]
+        publisherCnt: 3 # Must less than or equal to the size of topicNameSuffixList
+        publishPeriod_ms: 500.0
