@@ -50,6 +50,7 @@ The files under this directory will be copied to the package launcher directory.
     launch:
         params: "params.yaml"
         launch: "launch.py"
+        use_root: false
 
     network:
         interface: "eno1"
@@ -61,6 +62,7 @@ The files under this directory will be copied to the package launcher directory.
     - `launch`: The required parameters to create `runfile.sh` for systemd service.
         - `params`: The name of the parameters file under `params` directory.
         - `launch`: The name of the launch file under `launch` directory.
+        - `use_root`: The flag to run the service as root. If `true`, the service will be run as root.
 
     - `network`: The network parameters to create `runfile.sh` and service file.
         - `interface`: The network interface to use. The parameter will be added to the service file.
